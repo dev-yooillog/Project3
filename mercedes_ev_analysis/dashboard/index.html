@@ -1,0 +1,333 @@
+<!-- <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz vs Genesis 전략 분석 리포트 | JongHun</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; font-family: 'Pretendard', sans-serif; color: #333; }
+        .hero-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 80px 0; }
+        .card { border: none; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.05); transition: transform 0.2s; margin-bottom: 24px; }
+        .card:hover { transform: translateY(-5px); }
+        .insight-tag { font-size: 0.85rem; color: #3498db; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        .tech-stack .badge { background-color: #e9ecef; color: #495057; font-weight: 500; padding: 8px 12px; }
+        .strategy-box { background-color: #ffffff; border-left: 5px solid #1a1a2e; padding: 20px; }
+        .alert-info { background-color: #e3f2fd; border: none; border-left: 5px solid #2196f3; }
+        footer { background: #f1f3f5; }
+    </style>
+</head>
+<body>
+
+<section class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Mercedes-Benz 전동화 분석 기반</h1>
+        <p class="lead mb-4">제네시스(Genesis) 북미/유럽 시장 진입 전략 리포트</p>
+        <div class="d-flex justify-content-center gap-2 tech-stack">
+            <span class="badge bg-primary">분석가: JongHun</span>
+            <span class="badge">Python</span>
+            <span class="badge">Pandas (12M+ Data)</span>
+            <span class="badge">Parquet</span>
+            <span class="badge">Seaborn</span>
+        </div>
+    </div>
+</section>
+
+<div class="container mt-5">
+    
+    <div class="row">
+        <div class="col-md-12"><h3 class="fw-bold mb-4">01. 글로벌 전동화 트렌드 (2020-2025)</h3></div>
+        <div class="col-md-6">
+            <div class="card p-3 h-100">
+                <img src="../outputs/figures/01_electrification_trend.png" class="img-fluid rounded" alt="연료 비중 추이">
+                <div class="card-body px-0">
+                    <p class="insight-tag">#MARKET_TREND</p>
+                    <p class="card-text">벤츠의 EV 비중은 5년간 약 10배 이상 성장하며 시장 지배력을 확대 중입니다.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-3 h-100">
+                <img src="../outputs/figures/10_ev_yearly_share.png" class="img-fluid rounded" alt="진입 타이밍">
+                <div class="card-body px-0">
+                    <p class="insight-tag">#TIMING_STRATEGY</p>
+                    <p class="card-text">유럽은 이미 변곡점을 지났으며, 북미는 2024년이 브랜드 진입의 골든타임으로 분석됩니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h3 class="fw-bold mb-4 text-primary">02. 데이터 정밀 분석 (Data Integrity)</h3>
+            <div class="alert alert-info shadow-sm mb-4">
+                <strong>💡 Problem Solving:</strong> 분석 과정 중 'EQ 시리즈'의 항등식 문제를 식별하여 제거하고, 합성 데이터의 한계를 극복하기 위해 비중(%)이 아닌 판매 총량(Volume)으로 지표를 재정의했습니다.
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-3 h-100">
+                <img src="../outputs/figures/05_segment_ev_penetration.png" class="img-fluid rounded" alt="세그먼트별 침투율">
+                <div class="card-body px-0 text-center">
+                    <h6>내연기관 베이스 세그먼트별 EV 침투율</h6>
+                    <p class="small text-muted text-start mt-2">전용 EV 라인업을 제외한 순수 내연기관 모델들의 전동화 속도를 비교한 결과, 엔트리급의 전환이 가장 활발함을 확인했습니다.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-3 h-100">
+                <img src="../outputs/figures/06_model_ev_volume_trend.png" class="img-fluid rounded" alt="모델별 판매량">
+                <div class="card-body px-0 text-center">
+                    <h6>주요 모델별 EV 판매량 추이 (Volume)</h6>
+                    <p class="small text-muted text-start mt-2">단순 비중 분석의 한계를 넘어 실질적인 판매량(Volume Driver)을 파악했습니다. GLC와 CLA가 벤츠 전동화의 실질적 핵심임을 입증했습니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-12"><h3 class="fw-bold mb-4">03. 가격 탄력성 및 포지셔닝</h3></div>
+        <div class="col-md-7">
+            <div class="card p-3">
+                <img src="../outputs/figures/08_positioning_map.png" class="img-fluid rounded" alt="포지셔닝 맵">
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="strategy-box h-100">
+                <h5 class="fw-bold">Strategic Insights</h5>
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-3">✔ <b>비탄력적 수요:</b> 럭셔리 EV 라인업은 가격 저항이 낮아 고가 정책 유지가 가능함.</li>
+                    <li class="mb-3">✔ <b>가격 공백 공략:</b> 제네시스 GV60은 벤츠 엔트리 모델 대비 뛰어난 가성비 우위를 점함.</li>
+                    <li class="mb-3">✔ <b>Performance:</b> 유사 가격대에서 벤츠 대비 높은 마력(HP)을 제공하는 전략이 유효함.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 mb-5">
+        <div class="col-md-12">
+            <div class="card p-4 text-center bg-dark text-white border-0 shadow-lg">
+                <h2 class="fw-bold mb-4">최종 전략 제언: 제네시스(Genesis) 시장 진입 전략</h2>
+                <img src="../outputs/figures/11_strategy_summary.png" class="img-fluid rounded-3 shadow" alt="최종 전략 요약">
+                <div class="card-body px-0 pt-4">
+                    <p class="small text-light opacity-75">
+                        벤츠의 1,200만 건 판매 데이터를 기반으로 도출한 제네시스의 북미/유럽 시장 최적 진입 전략입니다. 
+                        **GLC/C-Class 기존 고객층**을 타겟으로, <b>벤츠 동급 대비 10-15%의 가격 경쟁력</b>을 확보하여 <b>2024-2025 북미 시장 변곡점</b>을 집중 공략할 것을 제안합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center py-5">
+    <p class="text-muted">&copy; 2026 <b>JongHun</b>. All rights reserved.</p>
+    <p class="small text-muted">본 리포트는 1,200만 건의 벤츠 판매 데이터를 기반으로 작성된 데이터 분석 프로젝트입니다.</p>
+</footer>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesis Strategy Dashboard | JongHun</title>
+    <style>
+        :root {
+            --primary: #1a1a2e; --accent: #2980b9; --bg: #f4f7f6;
+            --text: #333; --white: #ffffff; --info-bg: #e3f2fd;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+
+        /* 사이드바 */
+        .sidebar { 
+            width: 260px; height: 100vh; background: var(--primary); 
+            color: white; position: fixed; padding: 40px 20px; z-index: 1000;
+        }
+        .sidebar h2 { font-size: 1.1rem; margin-bottom: 50px; color: var(--accent); text-align: center; }
+        .nav-menu { list-style: none; }
+        .nav-menu li { margin-bottom: 25px; }
+        .nav-menu a { 
+            color: #adb5bd; text-decoration: none; font-size: 0.9rem; 
+            display: block; padding: 10px; border-radius: 5px; transition: 0.3s;
+        }
+        .nav-menu a:hover, .nav-menu a.active { color: white; background: rgba(255,255,255,0.1); font-weight: bold; }
+
+        /* 메인 콘텐츠 */
+        .main-content { margin-left: 260px; padding: 60px; max-width: 1400px; }
+        header { margin-bottom: 60px; border-bottom: 1px solid #ddd; padding-bottom: 30px; }
+        header h1 { font-size: 2.2rem; color: var(--primary); margin-bottom: 15px; }
+        .tech-stack { display: flex; gap: 8px; flex-wrap: wrap; }
+        .badge { background: #eee; padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; font-weight: 500; }
+        .badge.primary { background: var(--accent); color: white; }
+
+        .section-title { font-size: 1.6rem; margin: 60px 0 30px; color: var(--primary); display: flex; align-items: center; }
+        .section-title::before { content: ""; width: 6px; height: 24px; background: var(--accent); margin-right: 15px; border-radius: 3px; }
+
+        /* 카드 그리드 */
+        .chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 30px; }
+        .card { background: var(--white); border-radius: 15px; padding: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); transition: 0.3s; cursor: pointer; }
+        .card:hover { transform: translateY(-8px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+        .card h4 { font-size: 1rem; margin-bottom: 15px; color: #555; }
+        .card img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
+        .insight-tag { font-size: 0.75rem; color: var(--accent); font-weight: bold; display: block; margin-bottom: 5px; }
+        .card-text { font-size: 0.85rem; color: #666; }
+
+        /* 문제 해결 박스 */
+        .alert-box { background: var(--info-bg); border-left: 5px solid var(--accent); padding: 25px; border-radius: 10px; margin: 40px 0; }
+
+        /* 최종 전략 섹션 */
+        .final-strategy { background: var(--primary); color: white; padding: 60px; border-radius: 20px; margin-top: 80px; }
+        .strategy-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 40px; }
+        .strategy-item { background: rgba(255,255,255,0.05); padding: 30px; border-radius: 15px; border-left: 4px solid var(--accent); }
+        .strategy-item h5 { color: var(--accent); font-size: 1.1rem; margin-bottom: 12px; }
+
+        /* 모달 */
+        .modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); align-items: center; justify-content: center; }
+        .modal-content { max-width: 90%; max-height: 90%; border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+<nav class="sidebar">
+    <h2>STRATEGY LOGIC</h2>
+    <ul class="nav-menu">
+        <li><a href="#market" class="active">01. 글로벌 전동화 트렌드</a></li>
+        <li><a href="#integrity">02. 데이터 정밀 분석</a></li>
+        <li><a href="#pricing">03. 가격 및 포지셔닝</a></li>
+        <li><a href="#final">04. 최종 전략 제언</a></li>
+    </ul>
+</nav>
+
+<div class="main-content">
+    <header>
+        <h1>Mercedes-Benz 전동화 분석 기반</h1>
+        <p style="margin-bottom: 15px;">제네시스(Genesis) 북미/유럽 시장 진입 전략 리포트</p>
+        <div class="tech-stack">
+            <span class="badge primary">분석가: JongHun</span>
+            <span class="badge">Python</span>
+            <span class="badge">Pandas (12M+ Data)</span>
+            <span class="badge">Parquet</span>
+            <span class="badge">Vanilla JS</span>
+        </div>
+    </header>
+
+    <section id="market">
+        <h3 class="section-title">01. 글로벌 전동화 트렌드 (2020-2025)</h3>
+        <div class="chart-grid">
+            <div class="card" onclick="openModal(this)">
+                <h4>연도별 총 판매량 추이</h4>
+                <img src="../outputs/figures/00_yearly_volume.png" alt="Yearly Volume">
+                <span class="insight-tag">#MARKET_TREND</span>
+                <p class="card-text">벤츠의 EV 비중은 5년간 약 10배 이상 성장하며 시장 지배력을 확대 중입니다.</p>
+            </div>
+            <div class="card" onclick="openModal(this)">
+                <h4>EV 비중 연도별 추이 (진입 타이밍)</h4>
+                <img src="../outputs/figures/10_ev_yearly_share.png" alt="EV Share">
+                <span class="insight-tag">#TIMING_STRATEGY</span>
+                <p class="card-text">북미 시장은 2024년이 브랜드 진입의 골든타임으로 분석됩니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="integrity">
+        <h3 class="section-title">02. 데이터 정밀 분석 (Data Integrity)</h3>
+        <div class="alert-box">
+            <strong>💡 Problem Solving:</strong> 분석 과정 중 'EQ 시리즈'의 항등식 문제를 식별하여 제거하고, 
+            합성 데이터의 한계를 극복하기 위해 비중(%)이 아닌 판매 총량(Volume)으로 지표를 재정의했습니다.
+        </div>
+        <div class="chart-grid">
+            <div class="card" onclick="openModal(this)">
+                <h4>세그먼트별 EV 침투율</h4>
+                <img src="../outputs/figures/05_segment_ev_penetration.png" alt="Penetration">
+                <p class="card-text">전용 EV 라인업을 제외한 순수 내연기관 모델 중 엔트리급의 전환이 가장 활발함을 확인했습니다.</p>
+            </div>
+            <div class="card" onclick="openModal(this)">
+                <h4>주요 모델별 EV 판매량 추이</h4>
+                <img src="../outputs/figures/06_model_ev_volume_trend.png" alt="Volume Trend">
+                <p class="card-text">실질적인 판매량(Volume) 분석 결과, GLC와 CLA가 전동화의 실질적 핵심임을 입증했습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h3 class="section-title">03. 가격 탄력성 및 포지셔닝</h3>
+        <div class="chart-grid">
+            <div class="card" onclick="openModal(this)">
+                <h4>경쟁 모델 포지셔닝 맵 (HP vs Price)</h4>
+                <img src="../outputs/figures/08_positioning_map.png" alt="Positioning Map">
+            </div>
+            <div class="card" onclick="openModal(this)">
+                <h4>EV 모델별 가격 CAGR (상승률)</h4>
+                <img src="../outputs/figures/09_ev_price_inflation.png" alt="CAGR">
+            </div>
+        </div>
+    </section>
+
+    <section id="final" class="final-strategy">
+        <h2 style="text-align: center; margin-bottom: 40px;">최종 전략 제언: Genesis 시장 진입 전략</h2>
+        <div class="strategy-grid">
+            <div class="strategy-item">
+                <h5>비탄력적 수요 활용</h5>
+                <p>럭셔리 EV 라인업은 가격 저항이 낮아 고가 정책 유지가 가능함을 확인했습니다.</p>
+            </div>
+            <div class="strategy-item">
+                <h5>가격 공백 공략</h5>
+                <p>GV60은 벤츠 엔트리 모델 대비 뛰어난 가성비 우위를 점할 수 있는 구간에 위치합니다.</p>
+            </div>
+            <div class="strategy-item">
+                <h5>Performance 강조</h5>
+                <p>유사 가격대에서 벤츠 대비 15% 높은 마력(HP)을 제공하는 전략이 유효합니다.</p>
+            </div>
+            <div class="strategy-item">
+                <h5>Targeting</h5>
+                <p>GLC/C-Class 기존 고객층을 타겟으로 10-15%의 가격 경쟁력을 확보하여 진입해야 합니다.</p>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 50px; opacity: 0.6; font-size: 0.8rem;">&copy; 2026 JongHun. 1,200만 건의 판매 데이터 기반 분석 리포트</p>
+    </section>
+</div>
+
+<div id="imageModal" class="modal" onclick="this.style.display='none'">
+    <img class="modal-content" id="expandedImg">
+</div>
+
+<script>
+    // 카테고리 클릭 이동
+    const links = document.querySelectorAll('.nav-menu a');
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = document.querySelector(link.getAttribute('href'));
+            window.scrollTo({ top: target.offsetTop - 30, behavior: 'smooth' });
+            links.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+        });
+    });
+
+    // 이미지 확대 모달
+    function openModal(card) {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("expandedImg");
+        modal.style.display = "flex";
+        modalImg.src = card.querySelector('img').src;
+    }
+
+    // 스크롤 시 메뉴 자동 활성화
+    window.addEventListener('scroll', () => {
+        let current = "";
+        document.querySelectorAll('section').forEach(sec => {
+            if (pageYOffset >= sec.offsetTop - 150) current = sec.getAttribute('id');
+        });
+        links.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
+        });
+    });
+</script>
+</body>
+</html>
